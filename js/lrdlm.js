@@ -18,14 +18,21 @@ $(document).ready(function(){
 });
 
 // Segunda funcion: Scroll progress de los modals
-$(".modal-body").scroll(function() {
-    let scroll = $(this).scrollTop();
-    let scroll_height = $(this).get(0).scrollHeight;
-    let height = $(this).height();
-    let resta = scroll_height-height;
-    let scrolled = (scroll / resta)*100;
 
-    document.getElementById("myBar").style.width = scrolled + "%";
+$(".modal-body").scroll(function() {
+    scrollito($(this));
 });
 
+function scrollito(mb){
+    let scroll = mb.scrollTop();
+    let scroll_height = mb.get(0).scrollHeight;
+    let height = mb.height();
+    let resta = scroll_height-(height*1.06);
+    let scrolled = (scroll / resta)*100;
+
+    document.getElementById("bar"+mb.attr("id")).style.width = scrolled + "%";
+}
+
+
 //Tercera funcion: Spiner de carga inicial
+

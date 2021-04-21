@@ -201,7 +201,8 @@ h3 {
 }
 
 .imagencard.tres {
-    background-image: url('../img/PORTADA2.jpg');
+    background-image: url('../img/jardinTumba.jpg');
+    background-position: 50% 100%;
 }
 
 .logo {
@@ -359,17 +360,33 @@ h3 {
     background-repeat: no-repeat;
 }
 
-/* The progress container (grey background) */
-.progress-container {
-    position: fixed;
-    width: 100%;
-    height: 4px;
-    background: #ccc;
+.contenedorprogreso{
+    margin: 20px;
+    width:300px;
+    text-align: left;
 }
 
-/* The progress bar (scroll indicator) */
-.progress-bar {
-    height: 8px;
-    background: #4caf50;
+.contenedorBarra {
+    margin-top: 20px;
+    height: 3px;
+    background: #494949;
+    overflow: hidden;
+    border-radius: 3px;
+
+}
+
+.barraprogreso {
+    height: 4px;
+    background: #95700e;
     width: 0;
+}
+
+.oscuro{
+    background-color: #16171B;
+    border-style: hidden;
+}
+
+.oscuro.dos{
+    padding-top: 100px;
+    padding-bottom:200px;
 }
