@@ -1,3 +1,5 @@
+/*insertar fuentes*/
+
 @font-face {
     font-family: 'LEIXO DEMO';
     font-style: normal;
@@ -12,14 +14,43 @@
     src: url('../fonts/OratorStdMedium.ttf') format('truetype');
 }
 
-html {
-    scroll-behavior: smooth; }
+/*Cambiar el scrollbar*/
 
-body{
+::-webkit-scrollbar {
+    width: 5px
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, .5);
+    background: #211F26
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #895D08
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+    height: 0;
+    width: 0
+}
+
+input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/*estilos generales*/
+
+html {
+    scroll-behavior: smooth; /*Suavizar scroll de href*/
+}
+
+body {
     background-color: #0A0A0C;
 }
 
-p{
+p {
     text-align: center;
     font-family: "orator-std", monospace;
     font-size: 14px;
@@ -27,7 +58,7 @@ p{
     line-height: 15px;
 }
 
-h1{
+h1 {
     text-align: center;
     font-family: "LEIXO DEMO", sans-serif;
     font-size: 32px;
@@ -35,25 +66,27 @@ h1{
 
 }
 
-h2{
+h2 {
     text-align: center;
     font-family: "orator-std", monospace;
     font-size: 24px;
     color: #996600;
 }
 
-h3{
+h3 {
     text-align: center;
     font-family: "orator-std", monospace;
     font-size: 17px;
     color: #AAA085;
 }
 
-.navbarstyle{
-    background-color: #111111;
+/*Estilos personalizados*/
+
+.navbarstyle {
+    background-color:  #16171B;
 }
 
-.logonav{
+.logonav {
     margin-left: 20px;
     height: 47px;
     width: 260px;
@@ -63,7 +96,7 @@ h3{
     background-repeat: no-repeat;
 }
 
-.navbtn{
+.navbtn {
     font-family: "LEIXO DEMO", sans-serif;
     font-size: 15px;
     color: #E6E6E6;
@@ -74,31 +107,40 @@ h3{
     border-left-style: solid;
 }
 
-.seccion1{
+.seccion1 {
     margin-top: 69px;
 }
 
-.imagecaro{
+.imagecaro {
     background-image: url('../img/PORTADA1.jpg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.imagecaro.dos{
+.imagecaro.dos {
     background-image: url('../img/PORTADA2.jpg');
 }
 
-.imagecaro.tres{
+.imagecaro.tres {
     background-image: url('../img/PORTADA3.jpg');
 }
-.imagecaro.cuatro{
+
+.imagecaro.cuatro {
     background-image: url('../img/PORTADA4.jpeg');
 }
 
+.card {
+    -webkit-transition: all 375ms ease;
+    transition: all 375ms ease;
+}
 
+.card:hover {
+    z-index: 2;
+    transform: scale(1.1);
+}
 
-.barranegra{
+.barranegra {
     position: absolute;
     width: 100%;
     height: 300px;
@@ -109,7 +151,7 @@ h3{
     box-shadow: 0 11px 20px 1px rgba(0, 0, 0, 0.55);
 }
 
-.hero{
+.hero {
     margin-top: -40px;
     padding: 20px;
     background-color: #16171B;
@@ -119,48 +161,50 @@ h3{
     box-shadow: 0 11px 20px 1px rgba(0, 0, 0, 0.55);
 }
 
-.hero2{
+.hero2 {
     margin-top: -45px;
     padding: 10px;
     background-color: #16171B;
     box-shadow: 0 11px 20px 1px rgba(0, 0, 0, 0.55);
 }
 
-.hero3{
+.hero3 {
     padding: 10px;
     background-color: #16171B;
     box-shadow: 0 11px 20px 1px rgba(0, 0, 0, 0.55);
 }
 
-.containhero{
+.containhero {
     padding: 30px;
     border-color: #333333;
     border-style: solid;
     border-width: 1px;
 }
 
-.containhero2{
+.containhero2 {
     padding: 15px;
     border-color: #333333;
     border-style: solid;
     border-width: 1px;
 }
 
-.imagencard{
+.imagencard {
     min-height: 250px;
     background-image: url('../img/PORTADA3.jpg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.imagencard.dos{
+
+.imagencard.dos {
     background-image: url('../img/PORTADA1.jpg');
 }
-.imagencard.tres{
+
+.imagencard.tres {
     background-image: url('../img/PORTADA2.jpg');
 }
 
-.logo{
+.logo {
     height: 180px;
     margin-bottom: 20px;
     background-image: url('../img/LRDLM_WebArt-07.jpg');
@@ -169,7 +213,7 @@ h3{
     background-repeat: no-repeat;
 }
 
-.imagenfondo1{
+.imagenfondo1 {
     z-index: -1;
     top: 290px;
     position: absolute;
@@ -181,7 +225,7 @@ h3{
     background-repeat: no-repeat;
 }
 
-.logosec{
+.logosec {
     margin-bottom: 40px;
     height: 60px;
     width: 100%;
@@ -191,24 +235,24 @@ h3{
     background-repeat: no-repeat;
 }
 
-.seccionpadding{
+.seccionpadding {
     padding-top: 120px;
 }
 
-.linesec{
+.linesec {
     border-color: #CC901D;
     border-width: 1px;
     border-style: solid;
 }
 
-.containfondo{
+.containfondo {
     width: 100%;
     height: 60%;
     top: 0;
     position: absolute;
 }
 
-.imagenfondo2{
+.imagenfondo2 {
     z-index: -1;
     position: absolute;
     top: -50%;
@@ -220,21 +264,21 @@ h3{
     background-repeat: no-repeat;
 }
 
-.containvideo{
+.containvideo {
     padding: 25px 10px 25px 10px;
     border-color: #333333;
     border-style: solid;
     border-width: 1px;
 }
 
-.containvideo2{
+.containvideo2 {
     padding: 8px 5px 8px 5px;
     border-color: #333333;
     border-style: solid;
     border-width: 1px;
 }
 
-.imagenfondo3{
+.imagenfondo3 {
     z-index: -1;
     position: absolute;
     top: -50%;
@@ -246,7 +290,7 @@ h3{
     background-repeat: no-repeat;
 }
 
-.inputForm{
+.inputForm {
     background-color: transparent;
     padding: 15px;
     font-family: "orator-std", monospace;
@@ -259,10 +303,10 @@ h3{
     margin-right: 0;
 }
 
-.botonForm{
+.botonForm {
     background-image: linear-gradient(to top, #895D08, #D1A042);
     padding: 15px;
-    font-family: "LEIXO DEMO",sans-serif;
+    font-family: "LEIXO DEMO", sans-serif;
     font-size: 14px;
     color: #E6E6E6;
     width: 200px;
@@ -272,13 +316,13 @@ h3{
     margin-left: 0;
 }
 
-.footer{
+.footer {
     margin-top: 220px;
     background-color: #16171B;
     padding: 60px;
 }
 
-.logofoot{
+.logofoot {
     margin-bottom: 50px;
     height: 140px;
     width: 100%;
@@ -288,7 +332,7 @@ h3{
     background-repeat: no-repeat;
 }
 
-.botonarriba{
+.botonarriba {
     height: 50px;
     width: 60px;
     background-image: url('../img/LRDLM_WebArt-05.png');
@@ -297,7 +341,7 @@ h3{
     background-repeat: no-repeat;
 }
 
-.botonader{
+.botonader {
     height: 50px;
     width: 60px;
     background-image: url('../img/LRDLM_WebArt-04.png');
@@ -306,11 +350,26 @@ h3{
     background-repeat: no-repeat;
 }
 
-.botonizq{
+.botonizq {
     height: 50px;
     width: 60px;
     background-image: url('../img/LRDLM_WebArt-03.png');
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+    position: fixed;
+    width: 100%;
+    height: 4px;
+    background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0;
 }

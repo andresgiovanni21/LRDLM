@@ -1,3 +1,4 @@
+//Primear funcion: Modifica el comportamiento de los botones del carrusel
 $(document).ready(function(){
     // Activate Carousel
     $("#derecaro").carousel({interval: 4000, pause: false});
@@ -15,3 +16,16 @@ $(document).ready(function(){
         $("#izqcaro").carousel("next");
     });
 });
+
+// Segunda funcion: Scroll progress de los modals
+$(".modal-body").scroll(function() {
+    let scroll = $(this).scrollTop();
+    let scroll_height = $(this).get(0).scrollHeight;
+    let height = $(this).height();
+    let resta = scroll_height-height;
+    let scrolled = (scroll / resta)*100;
+
+    document.getElementById("myBar").style.width = scrolled + "%";
+});
+
+//Tercera funcion: Spiner de carga inicial
