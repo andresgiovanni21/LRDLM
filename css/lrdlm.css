@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'LEIXO DEMO';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/LEIXO-DEMO.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'orator-std';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/OratorStdMedium.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth; }
+
+body{
+    background-color: #0A0A0C;
+}
+
+p{
+    text-align: center;
+    font-family: "orator-std", monospace;
+    font-size: 14px;
+    color: #AAA085;
+    line-height: 15px;
+}
+
+h1{
+    text-align: center;
+    font-family: "LEIXO DEMO", sans-serif;
+    font-size: 32px;
+    color: #FFF3DF;
+
+}
+
+h2{
+    text-align: center;
+    font-family: "orator-std", monospace;
+    font-size: 24px;
+    color: #996600;
+}
+
+h3{
+    text-align: center;
+    font-family: "orator-std", monospace;
+    font-size: 17px;
+    color: #AAA085;
+}
+
+.navbarstyle{
+    background-color: #111111;
+}
+
+.logonav{
+    margin-left: 20px;
+    height: 47px;
+    width: 260px;
+    background-image: url('../img/LRDLM_WebArt-12.png');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbtn{
+    font-family: "LEIXO DEMO", sans-serif;
+    font-size: 15px;
+    color: #E6E6E6;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left-color: #333333;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+.seccion1{
+    margin-top: 69px;
+}
+
+.imagecaro{
+    background-image: url('../img/PORTADA1.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagecaro.dos{
+    background-image: url('../img/PORTADA2.jpg');
+}
+
+.imagecaro.tres{
+    background-image: url('../img/PORTADA3.jpg');
+}
+.imagecaro.cuatro{
+    background-image: url('../img/PORTADA4.jpeg');
+}
+
+
+
+.barranegra{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: #0F0F0F;
+    border-top-color: #543800;
+    border-top-style: solid;
+    border-top-width: 3px;
+    box-shadow: 0 11px 20px 1px rgba(0, 0, 0, 0.55);
+}
+
+.hero{
+    margin-top: -40px;
+    padding: 20px;
+    background-color: #16171B;
+    border-top-color: #CC901D;
+    border-top-style: solid;
+    border-top-width: 2px;
+    box-shadow: 0 11px 20px 1px rgba(0, 0, 0, 0.55);
+}
+
+.hero2{
+    margin-top: -45px;
+    padding: 10px;
+    background-color: #16171B;
+    box-shadow: 0 11px 20px 1px rgba(0, 0, 0, 0.55);
+}
+
+.hero3{
+    padding: 10px;
+    background-color: #16171B;
+    box-shadow: 0 11px 20px 1px rgba(0, 0, 0, 0.55);
+}
+
+.containhero{
+    padding: 30px;
+    border-color: #333333;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.containhero2{
+    padding: 15px;
+    border-color: #333333;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.imagencard{
+    min-height: 250px;
+    background-image: url('../img/PORTADA3.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imagencard.dos{
+    background-image: url('../img/PORTADA1.jpg');
+}
+.imagencard.tres{
+    background-image: url('../img/PORTADA2.jpg');
+}
+
+.logo{
+    height: 180px;
+    margin-bottom: 20px;
+    background-image: url('../img/LRDLM_WebArt-07.jpg');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imagenfondo1{
+    z-index: -1;
+    top: 290px;
+    position: absolute;
+    width: 100%;
+    height: 1100px;
+    background-image: url('../img/LRDLM_WebArt-08.jpg');
+    background-position: 50% 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logosec{
+    margin-bottom: 40px;
+    height: 60px;
+    width: 100%;
+    background-image: url('../img/LRDLM_WebArt-01.png');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.seccionpadding{
+    padding-top: 120px;
+}
+
+.linesec{
+    border-color: #CC901D;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.containfondo{
+    width: 100%;
+    height: 60%;
+    top: 0;
+    position: absolute;
+}
+
+.imagenfondo2{
+    z-index: -1;
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 1100px;
+    background-image: url('../img/LRDLM_WebArt-09.jpg');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.containvideo{
+    padding: 25px 10px 25px 10px;
+    border-color: #333333;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.containvideo2{
+    padding: 8px 5px 8px 5px;
+    border-color: #333333;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.imagenfondo3{
+    z-index: -1;
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 1100px;
+    background-image: url('../img/LRDLM_WebArt-10.jpg');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.inputForm{
+    background-color: transparent;
+    padding: 15px;
+    font-family: "orator-std", monospace;
+    font-size: 12px;
+    color: #AAA085;
+    width: 300px;
+    border-color: #333333;
+    border-style: solid;
+    border-width: 1px;
+    margin-right: 0;
+}
+
+.botonForm{
+    background-image: linear-gradient(to top, #895D08, #D1A042);
+    padding: 15px;
+    font-family: "LEIXO DEMO",sans-serif;
+    font-size: 14px;
+    color: #E6E6E6;
+    width: 200px;
+    border-color: #333333;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 0;
+}
+
+.footer{
+    margin-top: 220px;
+    background-color: #16171B;
+    padding: 60px;
+}
+
+.logofoot{
+    margin-bottom: 50px;
+    height: 140px;
+    width: 100%;
+    background-image: url('../img/LRDLM_WebArt-02.png');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.botonarriba{
+    height: 50px;
+    width: 60px;
+    background-image: url('../img/LRDLM_WebArt-05.png');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.botonader{
+    height: 50px;
+    width: 60px;
+    background-image: url('../img/LRDLM_WebArt-04.png');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.botonizq{
+    height: 50px;
+    width: 60px;
+    background-image: url('../img/LRDLM_WebArt-03.png');
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
