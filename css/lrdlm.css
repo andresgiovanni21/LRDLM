@@ -14,6 +14,20 @@
     src: url('../fonts/OratorStdMedium.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'chaparral';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/ChaparralPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'chaparral-italic';
+    font-style: italic;
+    font-weight: normal;
+    src: url('../fonts/ChaparralPro-LightIt.otf') format('opentype');
+}
+
 /*Cambiar el scrollbar*/
 
 ::-webkit-scrollbar {
@@ -50,6 +64,10 @@ body {
     background-color: #0A0A0C;
 }
 
+.ocultar{
+    overflow: hidden;
+}
+
 p {
     text-align: center;
     font-family: "orator-std", monospace;
@@ -80,7 +98,37 @@ h3 {
     color: #AAA085;
 }
 
+h4{
+    font-family:'chaparral', serif;
+    font-size: 18px;
+    color: #AAA085;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+h5{
+    font-family:'chaparral', serif;
+    font-size: 18px;
+    color: #AAA085;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-indent: 50px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
 /*Estilos personalizados*/
+
+.loader{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #0A0A0C;
+}
 
 .navbarstyle {
     background-color:  #16171B;
@@ -190,19 +238,23 @@ h3 {
 
 .imagencard {
     min-height: 250px;
-    background-image: url('../img/PORTADA3.jpg');
+    background-image: url('../img/LRDLM_WebArt-22.jpg');
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .imagencard.dos {
-    background-image: url('../img/PORTADA1.jpg');
+    background-image: url('../img/LRDLM_WebArt-23.jpg');
 }
 
 .imagencard.tres {
     background-image: url('../img/jardinTumba.jpg');
     background-position: 50% 100%;
+}
+
+.close{
+    color: #CC901D;
 }
 
 .logo {
