@@ -32,7 +32,7 @@ function scrollito(mb){
     document.getElementById("bar"+mb.attr("id")).style.width = ancho + "%";
 }
 
-//Tercera funcion: Spiner de carga inicial con 1 seg de delay
+//Tercera funcion: Preload con 1 seg de delay
 $(window).on('load',function() {
     setTimeout(function () {
         $(".loader").fadeOut('slow');
